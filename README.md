@@ -7,7 +7,6 @@
 
 ## Members
 
-<br>
 ## Tech
   + OpenCV
   + image annotation

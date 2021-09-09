@@ -4,6 +4,8 @@
 ## Purpose
   + image annotation
   + fine image -> coarse image
+  + 너무 과한 annotation으로 이미지 처리 작업을 할 수 없는 상황
+  + 이미 annotation 진행된 이미지를 다시 처리/가공하여 좀더 smooth한 anotation을 생성하기
 
 ## Members
 
@@ -24,12 +26,12 @@
 ## 첫 주 [Time Table]
   + 요구사항 충분히 분석
   + annotation points에 대한 데이터 전처리 작업
-  + image annotaion view 만들기
+  + image annotaion viewer 만들기
   + 필요한 알고리즘이나 기술들 정리해보기
 
-+ ## 9월 9일
-  + 예시 결과를 샘플로 받아 분석 진행
-  + openCV, tkinter 를 이용한 image annotation view 제작 50% 완료
++ ## 9월 8일
+  + 샘플데이터를 받아 분석 진행
+  + openCV, tkinter 를 이용한 image annotation viewer 제작 50% 완료
   + XML형식의 annotaiont points에 대한 전처리 작업 진행
   + 사용한 모듈 및 스킬
     + XML parsing에서 .tag .attrib .text 이용
@@ -44,4 +46,35 @@
     + 다음 두 식을 통해 tkinter에서 이미지로 출력 완성
     + imgtk2 = ImageTk.PhotoImage(image=self.img2)
     + label1 = tk.Label(self.window, image=imgtk1)
-
+    
++ ## 9월 9일
+  + image annotation viewer 완성
+  + tkinter에서 이미지와 이미지 이름을 한번에 받기
+    + 실행 코드
+     ```
+     image_formats = [("JPEG","*.jpg")]
+     file_path_list = askopenfilenames(filetypes=image_formats, initialdir="/", title='Please select a picture to analyze')
+     ```
+  + 서로 다른 annotation작업을 한 두 이미지를 한 화면에 출력
+    + 중요한 코드(class에서 작업할 때 이 코드가 없으면 이미지 출력이 안 됨)
+     ```
+     label = tk.Label(self.window, image=imgtk2)
+     label.image = imgtk2
+     ```
+  + 버튼을 누를 때마다 다른 이미지 출력
+    + 한 화면에서 이미지가 바뀌기 위해 필요한 코드
+    ```
+    label1.config(image=imgtk1)
+    ```
+  + annotation이 더 잘 보이도록 masking 처리
+    + 이미지롤 하나 더 복사
+    + 복사한 이미지를 색깔로 채우기
+    + 두 개의 이미지르 합치면서 복사한 이미지의 투명도를 정하기
+    ```
+    masked_img = cv2.fillPoly(masked_img, [pts], color)
+    masked_img = cv2.addWeighted(masked_img, 0.6, img1, 1, 0)
+    ```
+  + x,y 좌표값으 조절해서 annotation 결과에 대한 실험 진행
+    + 각각의 polygon 에서 x,y 좌표를 따로 추출하여 평균값 구하기
+    + 평균값보다 큰 x,y는 값을 줄이고 작은 x,y는 값을 늘리는 방식으로 설계
+    + 구현 결과 어느 정도 성과는 보았으나 만족한 결과는 아님

@@ -44,3 +44,4 @@
     + 다음 두 식을 통해 tkinter에서 이미지로 출력 완성
     + imgtk2 = ImageTk.PhotoImage(image=self.img2)
     + label1 = tk.Label(self.window, image=imgtk1)
+

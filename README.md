@@ -17,7 +17,7 @@
 
 ## Project Plan
   + 9월 8일 담당자와 인터뷰 및 샘플 데이터 수령
-  + 9월 15일짜기 샘플데이터를 이용한 script 개발
+  + 9월 15일까지 샘플데이터를 이용한 script 개발
   + 9월 17일 결과물을 사업부에 공유 및 피드백
   + 9월 20일 전체 데이터 수령(약 5만장)
   + 9월 30일까지 script 완료
@@ -78,3 +78,32 @@
     + 각각의 polygon 에서 x,y 좌표를 따로 추출하여 평균값 구하기
     + 평균값보다 큰 x,y는 값을 줄이고 작은 x,y는 값을 늘리는 방식으로 설계
     + 구현 결과 어느 정도 성과는 보았으나 만족한 결과는 아님
+    
++ ## 9월 13일
+  + choose another way to reduce polygon size.
+  + modify the design of the gui to show several results.
+  + use two ideas to reduce and smoothe edges.
+    + get relative axis for each polygon and reduce using this.
+    + get degree for every three points in a polygon and remove points having a small degree.
+    
+  + following is to reduce polygon size using relative axis for each polygon.
+    + get max, min points to build a rectangle covering polygon.
+    + get ratio x axis and y axis after building a rectangle.
+    + define how many size should be reduced.
+    + get relative points for every poings in the polygon.
+    + reduce total size.
+    
+  + following code is to get degree to prune edges.
+    + get degrees for every three points.
+    + if a degree is smaller than 30 or 40.., the point is removed.
+    ```
+    from math import atan2, degrees
+    def angle_between_three_points(self, points):
+        x1, y1 = points[0]
+        x2, y2 = points[1]
+        x3, y3 = points[2]
+        deg1 = (360 + degrees(atan2(x1 - x2, y1 - y2))) % 360
+        deg2 = (360 + degrees(atan2(x3 - x2, y3 - y2))) % 360
+        return deg2 - deg1 if deg1 <= deg2 else 360 - (deg1 - deg2)
+    ```
+    

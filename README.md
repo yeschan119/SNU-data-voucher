@@ -106,4 +106,8 @@
         deg2 = (360 + degrees(atan2(x3 - x2, y3 - y2))) % 360
         return deg2 - deg1 if deg1 <= deg2 else 360 - (deg1 - deg2)
     ```
-    
+ 
+ + ## 9월 15
+  + make download xml function.
+  + reduce time complexity with half(40s -> 12S).
+  + finish script for sample data

@@ -124,7 +124,7 @@
     https://github.com/CSAILVision/semantic-segmentation-pytorch
     ```
 + ## 10월 첫주
-  + semantic-segmentation 코드를 현재 프로젝트에 맞게 수정
+  + 논문에서 제공하는 semantic-segmentation 코드를 현재 프로젝트에 맞게 config값들과 코드를 수정
   + 수정한 코드를 이용하여 4만 객체에 대한 segmentation 진행
   + 자동 segmentation을 통해 생기는 오류값들에 대한 처리 진행
   + 전체 이미지에 대한 segmentation 및 annotation을 완료하여 전달

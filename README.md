@@ -1,12 +1,11 @@
-# SNU-data-voucher
-서울대학교 데이터 가공/처리 프로젝트
+# image segmentation 및 annotation 프로젝트
+## 서울대학교 데이터 가공/처리 프로젝트
 
 ## Purpose
   + image segmentation 및 annotation
   + pytorch를 이용한 semantic segmentation을 진행
   + segmentation이 끝난 데이터에서 annotation 결과 추출
-  + pytorch를 이용한 semantic segmentation을 진행
-  + annotation 진행 후 오류값들을 없애고 완벽한 annotation 결과 도출
+  + 자동 segmentation으로 생긴 오류값들을 검사하고 제거하여 완벽한 annotation 결과 도출
   
 ## 👨‍👦Members
   + 김범진
@@ -14,6 +13,7 @@
   
 ## Tech
   + OpenCV
+  + sementic segmentation
   + image annotation
   + xml
   + docker
@@ -114,3 +114,17 @@
   + make download xml function.
   + reduce time complexity with half(40s -> 12S).
   + finish script for sample data
+
++ ## 9월 30일
+  + 전체 데이터 전달 받음
+  + semantic-segmentation과 관련된 논문 검색
+  + MIT에서 제공하는 pytorch를 이용한 semantic-segmentation 코드에 대한 테스팅 진행
+    + github 주소
+    ```
+    https://github.com/CSAILVision/semantic-segmentation-pytorch
+    ```
++ ## 10월 첫주
+  + semantic-segmentation 코드를 현재 프로젝트에 맞게 수정
+  + 수정한 코드를 이용하여 4만 객체에 대한 segmentation 진행
+  + 자동 segmentation을 통해 생기는 오류값들에 대한 처리 진행
+  + 전체 이미지에 대한 segmentation 및 annotation을 완료하여 전달

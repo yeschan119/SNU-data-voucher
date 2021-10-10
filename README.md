@@ -2,13 +2,16 @@
 서울대학교 데이터 가공/처리 프로젝트
 
 ## Purpose
-  + image annotation
-  + fine image -> coarse image
-  + 너무 과한 annotation으로 이미지 처리 작업을 할 수 없는 상황
-  + 이미 annotation 진행된 이미지를 다시 처리/가공하여 좀더 smooth한 anotation을 생성하기
-
-## Members
-
+  + image segmentation 및 annotation
+  + pytorch를 이용한 semantic segmentation을 진행
+  + segmentation이 끝난 데이터에서 annotation 결과 추출
+  + pytorch를 이용한 semantic segmentation을 진행
+  + annotation 진행 후 오류값들을 없애고 완벽한 annotation 결과 도출
+  
+## 👨‍👦Members
+  + 김범진
+  + 강응찬
+  
 ## Tech
   + OpenCV
   + image annotation

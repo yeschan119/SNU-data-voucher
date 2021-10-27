@@ -124,11 +124,11 @@
     https://github.com/CSAILVision/semantic-segmentation-pytorch
     ```
     segmentation 결과
-    
+    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014699-b8a3293d-df1e-4154-ae6c-29ed6ea89061.jpg)
+![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014708-cbdf675f-d1b1-49c0-8238-6e19b9baa7da.png)
+
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013837-6b0850d7-295d-4f78-8993-867f1fd8936a.jpg)
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013939-7146e5ed-7a7f-4b58-8913-c8d3dc1413c5.png)
-    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014597-fa1e7392-7e92-4a9f-879a-26702895c75c.jpg)
-    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014619-04e4520a-b933-4892-84d6-be9cf6f8597b.png)
 
 + ## 10월 첫주
   + 논문에서 제공하는 semantic-segmentation 코드를 현재 프로젝트에 맞게 config값들과 코드를 수정

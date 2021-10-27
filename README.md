@@ -128,7 +128,8 @@
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013837-6b0850d7-295d-4f78-8993-867f1fd8936a.jpg)
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013939-7146e5ed-7a7f-4b58-8913-c8d3dc1413c5.png)
     
-    ![ADE_val_00000106](https://user-images.githubusercontent.com/83147205/139014802-d0eae08f-7c72-4d0e-b75f-3efbc0b18501.jpg)![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014822-14527b6c-d2e7-4ad3-a3ba-16f5efdde42d.png)
+    ![ADE_val_00000106](https://user-images.githubusercontent.com/83147205/139014802-d0eae08f-7c72-4d0e-b75f-3efbc0b18501.jpg)
+    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014822-14527b6c-d2e7-4ad3-a3ba-16f5efdde42d.png)
 + ## 10월 첫주
   + 논문에서 제공하는 semantic-segmentation 코드를 현재 프로젝트에 맞게 config값들과 코드를 수정
   + 수정한 코드를 이용하여 4만 객체에 대한 segmentation 진행

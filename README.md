@@ -127,10 +127,8 @@
     
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013837-6b0850d7-295d-4f78-8993-867f1fd8936a.jpg)
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013939-7146e5ed-7a7f-4b58-8913-c8d3dc1413c5.png)
-
-
-    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014463-9f188dd8-3639-46e0-b2b0-c9ee10fbf0c7.jpg)
-    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014490-f49d1911-dca6-476b-9818-b5b9442e9d67.png)
+    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014597-fa1e7392-7e92-4a9f-879a-26702895c75c.jpg)
+    ![ADE_val_00000107](https://user-images.githubusercontent.com/83147205/139014619-04e4520a-b933-4892-84d6-be9cf6f8597b.png)
 
 + ## 10월 첫주
   + 논문에서 제공하는 semantic-segmentation 코드를 현재 프로젝트에 맞게 config값들과 코드를 수정

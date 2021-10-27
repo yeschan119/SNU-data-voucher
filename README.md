@@ -123,7 +123,7 @@
     ```
     https://github.com/CSAILVision/semantic-segmentation-pytorch
     ```
-    segmentation 결과
+    + segmentation 결과
    
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013837-6b0850d7-295d-4f78-8993-867f1fd8936a.jpg)
     ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013939-7146e5ed-7a7f-4b58-8913-c8d3dc1413c5.png)

@@ -123,6 +123,11 @@
     ```
     https://github.com/CSAILVision/semantic-segmentation-pytorch
     ```
+    + segmentation 결과
+   
+    ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013837-6b0850d7-295d-4f78-8993-867f1fd8936a.jpg)
+    ![ADE_val_00000038](https://user-images.githubusercontent.com/83147205/139013939-7146e5ed-7a7f-4b58-8913-c8d3dc1413c5.png)
+    
 + ## 10월 첫주
   + 논문에서 제공하는 semantic-segmentation 코드를 현재 프로젝트에 맞게 config값들과 코드를 수정
   + 수정한 코드를 이용하여 4만 객체에 대한 segmentation 진행

@@ -18,7 +18,7 @@
   + xml
   + docker
 
-## Project Plan
+## Milesstone
   + 9월 8일 담당자와 인터뷰 및 샘플 데이터 수령
   + 9월 15일까지 샘플데이터를 이용한 script 개발
   + 9월 17일 결과물을 사업부에 공유 및 피드백

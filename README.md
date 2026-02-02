@@ -1,7 +1,5 @@
-# Image Segmentation and Annotation Project
+# Image Segmentation and Annotation Project - [한국어 🇰🇷](README.ko.md)
 ## Seoul National University Data Processing Project
-[한국어 🇰🇷](README.ko.md)
----
 
 ## Purpose
   + Image segmentation and annotation

@@ -1,4 +1,6 @@
 # image segmentation 및 annotation 프로젝트
+
+[ENGLISH 🇬🇧](README.en.md)
 ## 서울대학교 데이터 가공/처리 프로젝트
 
 ## Purpose
